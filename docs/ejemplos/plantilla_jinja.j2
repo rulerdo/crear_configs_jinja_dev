@@ -1,0 +1,24 @@
+EJEMPLO PLANTILLA JINJA
+
+{% if cliente[“genero”] == “masc” %}
+Estimado {{ NOMBRE }},
+{% else %} 
+Estimada {{ NOMBRE }},
+{% endif %}
+
+Estamos muy contentos de tenerlo como cliente desde {{ FECHA_INSCRIPCION }}
+
+Nos sentimos muy honrados que durante este tiempo usted haya contratados los siguientes servicios con nosotros
+
+ {% for ELEMENTO in SERVICIOS %}
+{{ ELEMENTO }}
+ {% endfor %}
+
+Para demostrarle cuanto lo apreciamos le daremos un mes de servicio gratis
+
+Sin más, le agradecemos su preferencia y esperamos el regalo sea de su agrado
+
+Atentamente
+Raul Gomez
+Chief Executive Officer
+
